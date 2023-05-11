@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Linking CSS-->
+    <link rel="stylesheet" href="css.css">
+
+    <!--Bootstrap CDN-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+
+    <!--Font Awesome CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--Google Fonts CDN-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Fuzzy+Bubbles:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container-fluid container1">
+        <header class="header1">
+            <nav class="navbar navbar-expand-sm  mg-left">
+                <a class="navbar-brand logo" href="#">Perfecto Pizza</a>
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"><span style="color: white; margin-left: 180px;">Home</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"><span style="color: white;">About Us</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"><span style="color: white;">Menu</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"><span style="color: white;">Contact Us</span></a>
+                  </li>
+                </ul>
+              </nav>
+        </header>
+        
+        <main>
+            <div class="container-fluid container2">
+                <div id="demo" class="carousel slide" data-ride="carousel">
+
+                    <!-- Indicators -->
+                    <ul class="carousel-indicators">
+                      <li data-target="#demo" data-slide-to="0" class="active"></li>
+                      <li data-target="#demo" data-slide-to="1"></li>
+                      <li data-target="#demo" data-slide-to="2"></li>
+                    </ul>
+                    
+                    <!-- The slideshow -->
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="pizza1.webp" alt="pizza1" width="1850" height="500">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="pizza2.webp" alt="pizza2" width="1800" height="500">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="pizza3.jpg" alt="pizza3" width="1800" height="500">
+                      </div>
+                    </div>
+                    
+                    <!-- Left and right controls -->
+                    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                      <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#demo" data-slide="next">
+                      <span class="carousel-control-next-icon"></span>
+                    </a>
+                  </div>
+                  <br>
+                  <div class="container-fluid">
+                    <h1 class="menu_heading">Our Pizzas</h1>
+                    <div class="row">
+                    <div class="col-4">
+                  <div class="card">
+                    <img src="Card image 1.jpg" alt="pizza1" class="card-img-top" height="150px" width="60px">
+                    <div class="card-body">
+                      <h4 class="card-title">Neapolitan pizza</h4>
+                      <p class="card-text">Neapolitan is the original pizza. This delicious pie dates all the way back to 18th century in Naples, Italy. During this time, the poorer citizens of this seaside city frequently purchased food that was cheap and could be eaten quickly.</p>
+                      <button type="button" class="btn btn-primary addToCartButton" data-toggle="modal" data-target="#pizza1">Add to Cart</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="card">
+                    <img src="Card image 2.jpg" alt="pizza1" class="card-img-top" height="150px" width="60px">
+                    <div class="card-body">
+                      <h4 class="card-title">Chicago Pizza</h4>
+                      <p class="card-text">Chicago pizza, also commonly referred to as deep-dish pizza, gets its name from the city it was invented in. During the early 1900’s, Italian immigrants in the windy city were searching for something similar to the Neapolitan pizza that they knew and loved.</p>
+                      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#pizza1">Add to Cart</button>
+                    </div>
+                  </div>
+                </div>
+               
+                <div class="col-4">
+                  <div class="card">
+                    <img src="Card image 3.webp" alt="pizza1" class="card-img-top" height="170px" width="60px">
+                    <div class="card-body">
+                      <h4 class="card-title">New York Pizza</h4>
+                      <p class="card-text">With its characteristic large, foldable slices and crispy outer crust, New York-style pizza is one of America’s most famous regional pizza types..New York-style pizza usually features tomato sauce and mozzarella cheese. </p>
+                      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#pizza1">Add to Cart</button>
+                    </div>
+                  </div>
+                </div>
+                </div>
+                </div>
+                <br>
+                <br>
+                <div class="row">
+                  <div class="col-4">
+                <div class="card">
+                  <img src="Card image 5.webp" alt="pizza1" class="card-img-top" height="170px" width="60px">
+                  <div class="card-body">
+                    <h4 class="card-title">Greek Pizza</h4>
+                    <p class="card-text">Greek pizza was created by Greek immigrants who came to America and were introduced to Italian pizza. Greek-style pizza, especially popular in the New England states.</p>
+                    <button type="button" class="btn btn-primary addToCartButton" data-toggle="modal" data-target="#pizza1">Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="card">
+                  <img src="Card image 4.webp" alt="pizza1" class="card-img-top" height="150px" width="60px">
+                  <div class="card-body">
+                    <h4 class="card-title">Sicilian Pizza</h4>
+                    <p class="card-text">Sicilian pizza, also known as "sfincione," provides a thick cut of pizza with pillowy dough, a crunchy crust, and robust tomato sauce. This square-cut pizza is served with or without cheese.</p>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#pizza1">Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+             
+              <div class="col-4">
+                <div class="card">
+                  <img src="Card image 6.jpg" alt="pizza1" class="card-img-top" height="150px" width="60px">
+                  <div class="card-body">
+                    <h4 class="card-title">California Pizza</h4>
+                    <p class="card-text">California pizza, or gourmet pizza, is known for its unusual ingredients. This pizza got its start back in the late 1970’s when Chef Ed LaDou began experimenting with pizza recipes in the classic Italian restaurant, Prego.</p>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#pizza1">Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+              </div>
+              </div>
+            </div>
+            
+            <div class="container-fluid">
+              <h1 class="orderHeading">Order Pizza</h1>
+              <div class="row">
+                <div class="col-6">
+                  <img src="pizzaman.webp" alt="pizzaMan" class="formImage">
+                </div>
+                <div class="col-6 formDiv">
+                  <form action="submit.php" method="get">
+                    <fieldset>
+                      <div class="row">
+                        <div class="col-6">
+                      <legend class="legend">No of Pizza</legend>
+                      <input type="number" name="noOfPizza" id="noofPizza" placeholder="No of Pizza(s)">
+                    </div>
+                    <div class="col-6">
+                      <legend class="legend">Shape Of Pizza</legend>
+                      <input type="text" placeholder="Circle/Square" name="shape">
+                    </div>
+                    </div>
+                    <br>
+                    <fieldset>
+                    
+                    <legend class="legend">Size Of Pizza</legend>
+                    <div class="row">
+                      <div class="col-6">
+                        <input type="radio" name="size" id="small" value="small">
+                        <label for="small" class="size">Small(4 slices)</label>
+                        <br>
+                        <input type="radio" name="size" id="large" value="large">
+                        <label for="large" class="size">Large(8 slices)</label>
+                      </div>
+                      <div class="col-6">
+                        <input type="radio" name="size" id="medium" value="medium">
+                        <label for="medium" class="size">Medium(6 slices)</label>
+                        <br>
+                        <input type="radio" name="size" id="x-large" value="x-large">
+                        <label for="large" class="size">X-Large(10 slices)</label>
+                      </div>
+                    </div>
+                  </fieldset>
+                  <br>
+                  <fieldset>
+                    <legend class="legend">Toppings</legend>
+                    <div class="row">
+                      <div class="col-4">
+                        <input type="checkbox" name="bacon" id="bacon">
+                        <label for="bacon" class="toppings">Bacon</label>
+                        <br>
+                        <input type="checkbox" name="tomatoes" id="tomatoes">
+                        <label for="tomatoes" class="toppings">Tomatoes</label>
+                        <br>
+                        <input type="checkbox" name="red onions" id="red onions">
+                        <label for="red onions" class="toppings">Red Onions</label>
+                      </div>
+                      <div class="col-4">
+                        <input type="checkbox" name="mushroom" id="mushroom">
+                        <label for="mushroom" class="toppings">Mushrooms</label>
+                        <br>
+                        <input type="checkbox" name="jalapenos" id="jalapenos">
+                        <label for="jalapenos" class="toppings">Jalapenos</label>
+                        <br>
+                        <input type="checkbox" name="red peppers" id="red peppers">
+                        <label for="red peppers" class="toppings">Red Peppers</label>
+                      </div>
+                      <div class="col-4">
+                        <input type="checkbox" name="pepproni" id="pepproni">
+                        <label for="pepproni" class="toppings">Pepproni</label>
+                        <br>
+                        <input type="checkbox" name="brocoli" id="brocoli">
+                        <label for="brocoli" class="toppings">Brocoli</label>
+                        <br>
+                        <input type="checkbox" name="bo" id="bo">
+                        <label for="bo" class="toppings">Black Olives</label>
+                      </div>
+                    </div>
+                  </fieldset>
+                  <br>
+                  <fieldset>
+                    <legend class="legend">Choice of Crust</legend>
+                    <div class="row">
+                      <div class="col-4">
+                        <input type="radio" name="crust" id="thin">
+                        <label for="thin" class="crust">Thin</label>
+                      </div>
+                      <div class="col-4">
+                        <input type="radio" name="crust" id="regular">
+                        <label for="regular" class="crust">Regular</label>
+                      </div>
+                      <div class="col-4">
+                        <input type="radio" name="crust" id="thick">
+                        <label for="thick" class="crust">Thick</label>
+                      </div>
+                    </div>
+                  </fieldset>
+                  <br>
+                  <fieldset>
+                    <div class="row">
+                      <div class="col-6">
+                    <legend class="legend">Payment Method</legend>
+                    <select id="payment" name="payment">
+                      <option value="cash">Cash</option>
+                      <option value="interac">Interac</option>
+                      <option value="credit">Credit Card</option>
+                      <option value="gpay">Google Pay</option>
+                    </select> 
+                  </div>
+                  <div class="col-6">
+                    <legend class="legend">Cooking Instructions</legend>
+                    <textarea name="ci" id="ci" cols="30" rows="3" placeholder="  Add Instructions Here"></textarea>
+                  </div>
+                  </div>
+                  </fieldset>
+                  <br>
+                  <button type="submit" class="btn btn-primary submitBtn">Submit</button>
+                  <button type="reset" class="btn btn-primary resetBtn">Reset</button>
+                    </fieldset>
+                  </form>
+                </div>
+              </div>
+            </div>
+        </main>
+        <aside>
+          <div class="container-fluid">
+            <h1 class="cardHeading">Our Chefs</h1>
+            <div class="row">
+              <div class="col-4">
+                <div class="card" style="width:400px">
+                  <img class="card-img-top" src="dummy1.jpg" alt="Card image" style="width:100%;height: 370px;">
+                  <div class="card-body">
+                    <h4 class="card-title">Joseph Root</h4>
+                    <p class="card-text"> His duties include overseeing kitchen staff, tasting dishes before going to customers and restocking food produce as needed</p>
+                    <a href="#" class="btn btn-primary">See Profile</a>
+                  </div>
+                </div>
+              </div>
+                  <div class="col-4">
+                    <div class="card" style="width:400px">
+                      <img class="card-img-top" src="dummy2.jpg" alt="Card image" style="width:100%">
+                      <div class="card-body">
+                        <h4 class="card-title">Beth Mooney</h4>
+                        <p class="card-text">Provide friendly, responsive service to create an exceptional experience for all of our guests.</p>
+                        <a href="#" class="btn btn-primary">See Profile</a>
+                      </div>
+              </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="card" style="width:400px">
+                      <img class="card-img-top" src="dummy3.png" alt="Card image" style="width:100%;height: 400px;">
+                      <div class="card-body">
+                        <h4 class="card-title">David Starc</h4>
+                        <p class="card-text">He is responsible for using his culinary expertise to create appetizing dishes for diners to enjoy. </p>
+                        <a href="#" class="btn btn-primary">See Profile</a>
+                      </div>
+                  </div>
+                  </div>
+            </div>
+          </div>
+          <div class="container-fluid">
+             <h1 class="asideHeading">Feedback Form</h1>
+             <form action="form.php">
+              <fieldset>
+                <div class="container">
+                <legend class="legend">Personal Details</legend>
+                <div class="row">
+                  <div class="col-6">
+                    <label for="fname" class="asideLabel">First Name: </label>
+                    <input type="text" name="fname" id="fname" placeholder="Enter your first name">
+                  </div>
+                  <div class="col-6">
+                    <label for="lname" class="asideLabel">Last Name:</label>
+                    <input type="text" name="lname" id="lname" placeholder="Enter your last name">
+                  </div>
+                </div>
+                <br>
+                <div class="row">
+                  <div class="col-6">
+                    <label for="email" class="asideLabel">Email: </label>
+                    <input type="email" name="email" id="email" placeholder="Enter your email">
+                  </div>
+                  <div class="col-6">
+                    <label for="phnNo" class="asideLabel">Mobile No: </label>
+                    <input type="tel" name="phnNo" id="phnNo" placeholder="Enter your phn no">
+                  </div>
+                </div>
+                <br>
+                <div class="row">
+                  <label for="feedback" class="asideLabel">Feedback: </label>
+                  <textarea name="feedback" id="feedback" cols="150" rows="4" placeholder="Enter feedback"></textarea>
+                </div>
+                <br>
+                <button class="btn btn-primary asideButton" style="margin-left:450px; ">Send Feedback</button>
+              </div>
+                
+              </fieldset>
+             </form>
+             <br>
+             <h1 class="asideHeading">Our Location</h1>
+             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2885.839500505459!2d-79.38078777073117!3d43.67230771233789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cb538b955555%3A0x718c47779069f22c!2sGeorgian%40ILAC!5e0!3m2!1sen!2sca!4v1665932433887!5m2!1sen!2sca" width="1500" height="450" style="border:0;text-align: center;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          
+        </aside>
+        <footer>
+          <div class="footer">
+            <div class="container">
+              <div class="row">
+                <div class="col-4">
+                  <h1 class="footerLogo">Perfecto Pizzeria</h1>
+                  <br>
+                  <p class="footerContent1">1372 XYZ Street <br> Brampton,Ontario <br>
+                    <i class="fa-solid fa-square-phone phoneIcon"></i> &nbsp;&nbsp; (647)-671-4386
+                    <br>
+                    <p class="ContactUs">Our Social Media  </p>
+                      <p class="icons"><i class="fa-brands fa-square-facebook icon1"></i>
+                        <i class="fa-brands fa-square-instagram icon2"></i>
+                        <i class="fa-brands fa-linkedin icon3"></i>
+                        <i class="fa-sharp fa-solid fa-square-envelope icon4"></i>
+                        <i class="fa-brands fa-square-twitter icon5"></i>
+                      </p>
+                  </p>
+                </div>
+                <div class="col-4">
+                  <h1 class="footerLinks" style="padding-top:15px ;">Important links</h1>
+                  <br>
+                  <br>
+                  <a href="#" style="color:black;font-size: 30px;font-weight: bold;">Home</a>
+                  <br>
+                  <a href="#" style="color:black;font-size: 30px;font-weight: bold;">AboutUs</a>
+                  <br>
+                  <a href="#" style="color:black;font-size: 30px;font-weight: bold;">Menu</a>
+                  <br>
+                  <a href="#" style="color:black;font-size: 30px;font-weight: bold;">Contact Us</a>
+                </div>
+                <div class="col-4">
+                  <h1 class="footerMember" style="padding-top: 15px;">Become Member</h1>
+                  <br>
+                  <br>
+                  <form>
+                    <fieldset>
+                      <input type="email" name="email2" id="email2" placeholder="Enter Your Email">
+                      <br>
+                      <br>
+                      <button class="btn btn-primary">Subscribe</button>
+                    </fieldset>
+                  </form>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          <div class="copyright">
+            <p class="copyrightContent">© Copyright Perfecto Pizzeria. All Rights Reserved</p>
+          </div>
+        </footer>
+    </div>
+</body>
+</html>
